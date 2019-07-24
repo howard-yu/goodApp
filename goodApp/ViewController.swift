@@ -14,7 +14,22 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-
+    @IBAction func showMessage() {
+        let alertController = UIAlertController(
+            title: "好帥",
+            message: "游適豪好帥",
+            preferredStyle: .alert
+        )
+        alertController.addAction(UIAlertAction(
+            title: "OK",
+            style: .default,
+            handler: nil
+        ))
+        self.present(
+            alertController,
+            animated: true,
+            completion: nil
+        )
+    }
 }
 
